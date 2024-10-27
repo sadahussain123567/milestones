@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style4.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="div2"><h2>MILESTONE 3</h2></div>
+      <div class="div2"><h2>RESUME BUILDER MADE BY SADDAM</h2></div>
+    </div>
+    <br />
+    <div class="parent2">
+      <div><h1>Dynamic Editable Resume</h1></div>
+    </div>
+    <div class="container">
+      <h1>Resume Builder</h1>
+      <form id="resume-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Enter your phone number"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address</label>
+          <textarea
+            id="address"
+            placeholder="Enter your address"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="education">Education</label>
+          <textarea
+            id="education"
+            placeholder="List your educational background"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="skills">Skills</label>
+          <input
+            type="text"
+            id="skills"
+            placeholder="E.g., HTML, CSS, JavaScript"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="experience">Work Experience</label>
+          <textarea
+            id="experience"
+            placeholder="Describe your work experience"
+            required
+          ></textarea>
+        </div>
+
+        <button type="button" onclick="generateResume()">
+          Generate Resume
+        </button>
+      </form>
+
+      <div class="resume" id="resume-output" style="display: none">
+        <h2>Generated Resume</h2>
+        <p><strong>Name:</strong> <span id="output-name"></span></p>
+        <p><strong>Email:</strong> <span id="output-email"></span></p>
+        <p><strong>Phone:</strong> <span id="output-phone"></span></p>
+        <p><strong>Address:</strong> <span id="output-address"></span></p>
+        <p><strong>Education:</strong> <span id="output-education"></span></p>
+        <p><strong>Skills:</strong> <span id="output-skills"></span></p>
+        <p>
+          <strong>Work Experience:</strong> <span id="output-experience"></span>
+        </p>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h2>About Us</h2>
+          <p>
+            Welcome! I am Sadam, a passionate student at GIAIC, diving into the
+            transformative world of
+            <strong>Web 3.0, Metaverse, and Blockchain</strong>. My journey is
+            driven by a desire to explore decentralized technologies, virtual
+            spaces, and how these innovations will reshape the future.
+          </p>
+        </div>
+
+        <div class="footer-section links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/saddam-hussain-baa6982b9/"
+                >Linkedin</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section contact">
+          <p><i class="fas fa-phone-alt"></i> +923456789102</p>
+          <p><i class="fas fa-envelope"></i> Saddam@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
